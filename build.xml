@@ -34,7 +34,7 @@
         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
             <!-- 声明要运行的脚本路径"*.jmx"指包含此目录下的所有jmeter脚本-->
-			<!-- 当前目录模式 testplans dir="C:\ant调用jmeter\interface_test\script" includes="*.jmx"-->
+			<!-- 当前目录模式 testplans dir="C:\automation_ant\script" includes="*.jmx"-->
             <testplans dir="script" includes="*.jmx" />
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
         </jmeter>
