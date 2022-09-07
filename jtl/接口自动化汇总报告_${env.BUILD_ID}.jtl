@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="7" it="0" lt="0" ct="0" ts="1588865392145" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="1173" it="0" lt="1173" ct="1094" ts="1588865392267" s="true" lb="生产环境_发送请求给百度,获取title" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 2443
+Content-Type: text/html
+Server: bfe
+Date: Thu, 07 May 2020 15:29:53 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.baidu.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_242)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);&#xd;
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="1173" it="109" lt="1173" ct="1094" ts="1588865392171" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="71" it="0" lt="70" ct="0" ts="1588865393473" s="true" lb="生产环境获取cookie" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="357" sby="610" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:29:53 GMT
+Expires: Thu, 07 May 2020 15:29:53 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 90
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041102({&quot;errNo&quot;:&quot;403&quot;,&quot;content&quot;: []})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110203440757049135359_1567308041102&amp;num=8&amp;_req_seqid=&amp;sid=&amp;_=1567308041103</java.net.URL>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1588865393545" s="true" lb="生产环境获取json格式响应结果" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="346" sby="565" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:29:53 GMT
+Expires: Thu, 07 May 2020 15:29:53 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 79
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;errNo&quot;:&quot;403&quot;,&quot;data&quot;: { &quot;redDot&quot;: [  ], &quot;newWord&quot;: [  ], &quot;layer&quot;: [  ] }}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/xman/data/tipspluslist?indextype=manht&amp;_req_seqid=0xb7c1b11f00045470&amp;asyn=1&amp;t=1567308909107&amp;sid=1443_21125_29522_29518_29720_29567_29220_26350_29589</java.net.URL>
+</httpSample>
+<httpSample t="70" it="0" lt="70" ct="0" ts="1588865393624" s="true" lb="生产环境输入搜索文字" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:29:53 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;12929014436901093486&quot;,&quot;queryid&quot;:&quot;0x5116212763006e&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865393622&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="203" it="21" lt="202" ct="0" ts="1588865393472" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="952" sby="1924" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="75" it="0" lt="75" ct="0" ts="1588865393697" s="true" lb="生产环境输入搜索文字1" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="247" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 129
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:29:53 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;4631519427874968285&quot;,&quot;queryid&quot;:&quot;0xf76617cced2dd&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865393622&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1588865393803" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="584" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@64133e2
+START.HMS=232950
+START.MS=1588865390267
+START.YMD=20200507
+TESTSTART.MS=1588865391635
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+__jmeter.USER_TOKEN__=控制台 1-1
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+time=1588865393622
+title=百度一下，你就知道
+title_check=百度一下，你就知道
+title_g=1
+title_g0=&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt;
+title_g1=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<sample t="4" it="0" lt="0" ct="0" ts="1588865430633" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="1122" it="0" lt="1122" ct="993" ts="1588865430751" s="true" lb="生产环境_发送请求给百度,获取title" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 2443
+Content-Type: text/html
+Server: bfe
+Date: Thu, 07 May 2020 15:30:31 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.baidu.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_242)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);&#xd;
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="1122" it="127" lt="1122" ct="993" ts="1588865430654" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="77" it="0" lt="75" ct="0" ts="1588865431929" s="true" lb="生产环境获取cookie" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="357" sby="610" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:30:31 GMT
+Expires: Thu, 07 May 2020 15:30:31 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 90
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041102({&quot;errNo&quot;:&quot;403&quot;,&quot;content&quot;: []})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110203440757049135359_1567308041102&amp;num=8&amp;_req_seqid=&amp;sid=&amp;_=1567308041103</java.net.URL>
+</httpSample>
+<httpSample t="68" it="0" lt="68" ct="0" ts="1588865432011" s="true" lb="生产环境获取json格式响应结果" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="346" sby="565" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:30:31 GMT
+Expires: Thu, 07 May 2020 15:30:31 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 79
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;errNo&quot;:&quot;403&quot;,&quot;data&quot;: { &quot;redDot&quot;: [  ], &quot;newWord&quot;: [  ], &quot;layer&quot;: [  ] }}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/xman/data/tipspluslist?indextype=manht&amp;_req_seqid=0xb7c1b11f00045470&amp;asyn=1&amp;t=1567308909107&amp;sid=1443_21125_29522_29518_29720_29567_29220_26350_29589</java.net.URL>
+</httpSample>
+<httpSample t="74" it="0" lt="74" ct="0" ts="1588865432129" s="true" lb="生产环境输入搜索文字" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:30:31 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;16265730310589071841&quot;,&quot;queryid&quot;:&quot;0xa07b89b6f741e1&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865432123&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="219" it="65" lt="217" ct="0" ts="1588865431929" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="952" sby="1924" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="74" it="0" lt="74" ct="0" ts="1588865432215" s="true" lb="生产环境输入搜索文字1" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="248" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 130
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:30:32 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;8430212243359280681&quot;,&quot;queryid&quot;:&quot;0xe4215ec2942e29&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865432123&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="4" it="0" lt="0" ct="0" ts="1588865432319" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="584" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@6648390
+START.HMS=233029
+START.MS=1588865429027
+START.YMD=20200507
+TESTSTART.MS=1588865430237
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+__jmeter.USER_TOKEN__=控制台 1-1
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+time=1588865432123
+title=百度一下，你就知道
+title_check=百度一下，你就知道
+title_g=1
+title_g0=&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt;
+title_g1=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<sample t="6" it="0" lt="0" ct="0" ts="1588865538361" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="1079" it="0" lt="1078" ct="963" ts="1588865538459" s="true" lb="生产环境_发送请求给百度,获取title" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 2443
+Content-Type: text/html
+Server: bfe
+Date: Thu, 07 May 2020 15:32:19 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.baidu.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_242)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);&#xd;
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="1079" it="130" lt="1078" ct="963" ts="1588865538382" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="76" it="0" lt="73" ct="0" ts="1588865539601" s="true" lb="生产环境获取cookie" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="357" sby="610" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:32:19 GMT
+Expires: Thu, 07 May 2020 15:32:19 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 90
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041102({&quot;errNo&quot;:&quot;403&quot;,&quot;content&quot;: []})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110203440757049135359_1567308041102&amp;num=8&amp;_req_seqid=&amp;sid=&amp;_=1567308041103</java.net.URL>
+</httpSample>
+<httpSample t="71" it="0" lt="71" ct="0" ts="1588865539680" s="true" lb="生产环境获取json格式响应结果" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="346" sby="565" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:32:19 GMT
+Expires: Thu, 07 May 2020 15:32:19 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 79
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;errNo&quot;:&quot;403&quot;,&quot;data&quot;: { &quot;redDot&quot;: [  ], &quot;newWord&quot;: [  ], &quot;layer&quot;: [  ] }}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/xman/data/tipspluslist?indextype=manht&amp;_req_seqid=0xb7c1b11f00045470&amp;asyn=1&amp;t=1567308909107&amp;sid=1443_21125_29522_29518_29720_29567_29220_26350_29589</java.net.URL>
+</httpSample>
+<httpSample t="68" it="0" lt="68" ct="0" ts="1588865539800" s="true" lb="生产环境输入搜索文字" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:32:19 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;12495302150956145430&quot;,&quot;queryid&quot;:&quot;0x6b3b1a74ea5b16&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865539797&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="215" it="57" lt="212" ct="0" ts="1588865539601" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="952" sby="1924" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="72" it="0" lt="72" ct="0" ts="1588865539874" s="true" lb="生产环境输入搜索文字1" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:32:19 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;10019492834191231962&quot;,&quot;queryid&quot;:&quot;0x3a63a5ab8a4bda&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865539797&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1588865539978" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="585" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@3463d429
+START.HMS=233216
+START.MS=1588865536780
+START.YMD=20200507
+TESTSTART.MS=1588865537979
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+__jmeter.USER_TOKEN__=控制台 1-1
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+time=1588865539797
+title=百度一下，你就知道
+title_check=百度一下，你就知道
+title_g=1
+title_g0=&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt;
+title_g1=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<sample t="5" it="0" lt="0" ct="0" ts="1588865569578" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="1150" it="0" lt="1150" ct="1043" ts="1588865569677" s="true" lb="生产环境_发送请求给百度,获取title" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 2443
+Content-Type: text/html
+Server: bfe
+Date: Thu, 07 May 2020 15:32:50 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.baidu.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_242)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);&#xd;
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="1150" it="106" lt="1150" ct="1043" ts="1588865569597" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="75" it="0" lt="72" ct="0" ts="1588865570862" s="true" lb="生产环境获取cookie" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="357" sby="610" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:32:50 GMT
+Expires: Thu, 07 May 2020 15:32:50 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 90
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041102({&quot;errNo&quot;:&quot;403&quot;,&quot;content&quot;: []})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110203440757049135359_1567308041102&amp;num=8&amp;_req_seqid=&amp;sid=&amp;_=1567308041103</java.net.URL>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1588865570941" s="true" lb="生产环境获取json格式响应结果" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="346" sby="565" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 07 May 2020 15:32:50 GMT
+Expires: Thu, 07 May 2020 15:32:50 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 79
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;errNo&quot;:&quot;403&quot;,&quot;data&quot;: { &quot;redDot&quot;: [  ], &quot;newWord&quot;: [  ], &quot;layer&quot;: [  ] }}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/xman/data/tipspluslist?indextype=manht&amp;_req_seqid=0xb7c1b11f00045470&amp;asyn=1&amp;t=1567308909107&amp;sid=1443_21125_29522_29518_29720_29567_29220_26350_29589</java.net.URL>
+</httpSample>
+<httpSample t="79" it="0" lt="79" ct="0" ts="1588865571048" s="true" lb="生产环境输入搜索文字" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:32:50 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;6025020115295309189&quot;,&quot;queryid&quot;:&quot;0x1442bdf78c28d85&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865571044&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="219" it="57" lt="216" ct="0" ts="1588865570861" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="952" sby="1924" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="74" it="0" lt="74" ct="0" ts="1588865571139" s="true" lb="生产环境输入搜索文字1" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 07 May 2020 15:32:50 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;11497129338913052910&quot;,&quot;queryid&quot;:&quot;0x30023826a258ee&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1588865571044&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1588865571246" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="GBK" by="534" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@3c6d7a78
+START.HMS=233247
+START.MS=1588865567962
+START.YMD=20200507
+TESTSTART.MS=1588865569184
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+__jmeter.USER_TOKEN__=控制台 1-1
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+time=1588865571044
+title=百度一下，你就知道
+title_check=百度一下，你就知道
+title_g=1
+title_g0=&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt;
+title_g1=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<sample t="8" it="0" lt="0" ct="0" ts="1589436714351" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="913" it="0" lt="913" ct="876" ts="1589436714475" s="true" lb="生产环境_发送请求给百度,获取title" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 2443
+Content-Type: text/html
+Server: bfe
+Date: Thu, 14 May 2020 06:11:55 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Host: www.baidu.com
+User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_242)
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;&lt;meta http-equiv=X-UA-Compatible content=IE=Edge&gt;&lt;meta content=always name=referrer&gt;&lt;link rel=stylesheet type=text/css href=https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/bdorz/baidu.min.css&gt;&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt; &lt;body link=#0000cc&gt; &lt;div id=wrapper&gt; &lt;div id=head&gt; &lt;div class=head_wrapper&gt; &lt;div class=s_form&gt; &lt;div class=s_form_wrapper&gt; &lt;div id=lg&gt; &lt;img hidefocus=true src=//www.baidu.com/img/bd_logo1.png width=270 height=129&gt; &lt;/div&gt; &lt;form id=form name=f action=//www.baidu.com/s class=fm&gt; &lt;input type=hidden name=bdorz_come value=1&gt; &lt;input type=hidden name=ie value=utf-8&gt; &lt;input type=hidden name=f value=8&gt; &lt;input type=hidden name=rsv_bp value=1&gt; &lt;input type=hidden name=rsv_idx value=1&gt; &lt;input type=hidden name=tn value=baidu&gt;&lt;span class=&quot;bg s_ipt_wr&quot;&gt;&lt;input id=kw name=wd class=s_ipt value maxlength=255 autocomplete=off autofocus=autofocus&gt;&lt;/span&gt;&lt;span class=&quot;bg s_btn_wr&quot;&gt;&lt;input type=submit id=su value=百度一下 class=&quot;bg s_btn&quot; autofocus&gt;&lt;/span&gt; &lt;/form&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=u1&gt; &lt;a href=http://news.baidu.com name=tj_trnews class=mnav&gt;新闻&lt;/a&gt; &lt;a href=https://www.hao123.com name=tj_trhao123 class=mnav&gt;hao123&lt;/a&gt; &lt;a href=http://map.baidu.com name=tj_trmap class=mnav&gt;地图&lt;/a&gt; &lt;a href=http://v.baidu.com name=tj_trvideo class=mnav&gt;视频&lt;/a&gt; &lt;a href=http://tieba.baidu.com name=tj_trtieba class=mnav&gt;贴吧&lt;/a&gt; &lt;noscript&gt; &lt;a href=http://www.baidu.com/bdorz/login.gif?login&amp;amp;tpl=mn&amp;amp;u=http%3A%2F%2Fwww.baidu.com%2f%3fbdorz_come%3d1 name=tj_login class=lb&gt;登录&lt;/a&gt; &lt;/noscript&gt; &lt;script&gt;document.write(&apos;&lt;a href=&quot;http://www.baidu.com/bdorz/login.gif?login&amp;tpl=mn&amp;u=&apos;+ encodeURIComponent(window.location.href+ (window.location.search === &quot;&quot; ? &quot;?&quot; : &quot;&amp;&quot;)+ &quot;bdorz_come=1&quot;)+ &apos;&quot; name=&quot;tj_login&quot; class=&quot;lb&quot;&gt;登录&lt;/a&gt;&apos;);&#xd;
+                &lt;/script&gt; &lt;a href=//www.baidu.com/more/ name=tj_briicon class=bri style=&quot;display: block;&quot;&gt;更多产品&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div id=ftCon&gt; &lt;div id=ftConw&gt; &lt;p id=lh&gt; &lt;a href=http://home.baidu.com&gt;关于百度&lt;/a&gt; &lt;a href=http://ir.baidu.com&gt;About Baidu&lt;/a&gt; &lt;/p&gt; &lt;p id=cp&gt;&amp;copy;2017&amp;nbsp;Baidu&amp;nbsp;&lt;a href=http://www.baidu.com/duty/&gt;使用百度前必读&lt;/a&gt;&amp;nbsp; &lt;a href=http://jianyi.baidu.com/ class=cp-feedback&gt;意见反馈&lt;/a&gt;&amp;nbsp;京ICP证030173号&amp;nbsp; &lt;img src=//www.baidu.com/img/gs.gif&gt; &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="913" it="115" lt="913" ct="876" ts="1589436714376" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="2559" sby="117" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="28" it="0" lt="28" ct="0" ts="1589436715411" s="true" lb="生产环境获取cookie" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="357" sby="610" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 14 May 2020 06:11:55 GMT
+Expires: Thu, 14 May 2020 06:11:55 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 90
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041102({&quot;errNo&quot;:&quot;403&quot;,&quot;content&quot;: []})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/msg/data/personalcontent?callback=jQuery110203440757049135359_1567308041102&amp;num=8&amp;_req_seqid=&amp;sid=&amp;_=1567308041103</java.net.URL>
+</httpSample>
+<httpSample t="19" it="0" lt="19" ct="0" ts="1589436715441" s="true" lb="生产环境获取json格式响应结果" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="utf-8" by="346" sby="565" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: private
+Connection: keep-alive
+Content-Type: text/html;charset=utf-8
+Date: Thu, 14 May 2020 06:11:55 GMT
+Expires: Thu, 14 May 2020 06:11:55 GMT
+Server: BWS/1.0
+Vary: Accept-Encoding
+Content-Length: 79
+Content-Encoding: gzip
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;errNo&quot;:&quot;403&quot;,&quot;data&quot;: { &quot;redDot&quot;: [  ], &quot;newWord&quot;: [  ], &quot;layer&quot;: [  ] }}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/home/xman/data/tipspluslist?indextype=manht&amp;_req_seqid=0xb7c1b11f00045470&amp;asyn=1&amp;t=1567308909107&amp;sid=1443_21125_29522_29518_29720_29567_29220_26350_29589</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="23" ct="0" ts="1589436715480" s="true" lb="生产环境输入搜索文字" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="249" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 131
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 14 May 2020 06:11:55 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;12881808486772366939&quot;,&quot;queryid&quot;:&quot;0x2d609166adde5b&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1589436715477&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="70" it="25" lt="70" ct="0" ts="1589436715411" s="true" lb="事务控制器" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="控制台 1-1" dt="" de="" by="952" sby="1924" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<httpSample t="26" it="0" lt="25" ct="0" ts="1589436715506" s="true" lb="生产环境输入搜索文字1" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="UTF-8" by="248" sby="749" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <assertionResult>
+    <name>BeanShell断言</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Length: 130
+Content-Type: text/plain; charset=UTF-8
+Date: Thu, 14 May 2020 06:11:55 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Sec-Fetch-Mode: cors
+Referer: https://www.baidu.com/
+Sec-Fetch-Site: same-origin
+Accept-Language: zh-CN,zh;q=0.9
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Host: www.baidu.com
+</requestHeader>
+  <responseData class="java.lang.String">jQuery110203440757049135359_1567308041098({&quot;q&quot;:&quot;13787521050&quot;,&quot;p&quot;:false,&quot;slid&quot;:&quot;9693269898872585959&quot;,&quot;queryid&quot;:&quot;0x3c699daa497ee7&quot;})</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/sugrec?pre=1&amp;p=3&amp;ie=utf-8&amp;json=1&amp;prod=pc&amp;from=pc_web&amp;sugsid=1443%2C21125%2C29522%2C29518%2C29720%2C29567%2C29220%2C26350%2C29589&amp;wd=13787521050&amp;req=2&amp;pbs=1589436715477&amp;csor=3&amp;pwd=%E8%85%BE%E8%AE%AF&amp;cb=jQuery110203440757049135359_1567308041098&amp;_=1567308041110</java.net.URL>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1589436715543" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="GBK" by="534" sby="0" sc="1" ec="0" ng="1" na="1" hn="xietian1983">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@349f29db
+START.HMS=141152
+START.MS=1589436712331
+START.YMD=20200514
+TESTSTART.MS=1589436713914
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+__jmeter.USER_TOKEN__=控制台 1-1
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+time=1589436715477
+title=百度一下，你就知道
+title_check=百度一下，你就知道
+title_g=1
+title_g0=&lt;title&gt;百度一下，你就知道&lt;/title&gt;&lt;/head&gt;
+title_g1=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+<sample t="4" it="0" lt="0" ct="0" ts="1662109104801" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="12110" it="0" lt="0" ct="12109" ts="1662109104859" s="false" lb="生产环境_发送请求给百度,获取title" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.baidu.com" tn="控制台 1-1" dt="text" de="" by="2160" sby="0" sc="1" ec="1" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">java.net.UnknownHostException: www.baidu.com&#xd;
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)&#xd;
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)&#xd;
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)&#xd;
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)&#xd;
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)&#xd;
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)&#xd;
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)&#xd;
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)&#xd;
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:318)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)&#xd;
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:697)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:455)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1189)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1178)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:416)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:250)&#xd;
+	at java.lang.Thread.run(Thread.java:748)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="12110" it="73" lt="0" ct="12109" ts="1662109104809" s="false" lb="事务控制器" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="控制台 1-1" dt="" de="" by="2160" sby="0" sc="1" ec="1" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<sample t="1" it="0" lt="0" ct="0" ts="1662109117022" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="GBK" by="368" sby="0" sc="1" ec="0" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=false
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@f84f80
+START.HMS=165823
+START.MS=1662109103740
+START.YMD=20220902
+TESTSTART.MS=1662109104511
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+title_check=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

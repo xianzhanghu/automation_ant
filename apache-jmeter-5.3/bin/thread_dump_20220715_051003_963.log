@@ -1,0 +1,88 @@
+"Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.13/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.13/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.13/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@4c2f4799
+	at java.base@11.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@4c2f4799
+	at java.base@11.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.13/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+"Attach Listener" daemon prio=5 Id=5 RUNNABLE
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@6641089d
+	at java.base@11.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6641089d
+	at java.base@11.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.13/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.13/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+"Java2D Disposer" daemon prio=10 Id=14 WAITING on java.lang.ref.ReferenceQueue$Lock@281006d5
+	at java.base@11.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@281006d5
+	at java.base@11.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.desktop@11.0.13/sun.java2d.Disposer.run(Disposer.java:144)
+	at java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+
+"AWT-Shutdown" prio=5 Id=15 WAITING on java.lang.Object@14792a5c
+	at java.base@11.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@14792a5c
+	at java.base@11.0.13/java.lang.Object.wait(Object.java:328)
+	at java.desktop@11.0.13/sun.awt.AWTAutoShutdown.run(AWTAutoShutdown.java:291)
+	at java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+
+"AWT-Windows" daemon prio=6 Id=16 RUNNABLE (in native)
+	at java.desktop@11.0.13/sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at java.desktop@11.0.13/sun.awt.windows.WToolkit.run(WToolkit.java:305)
+	at java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+
+"AWT-EventQueue-0" prio=6 Id=19 RUNNABLE
+	at java.management@11.0.13/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@11.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:521)
+	at java.management@11.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:509)
+	at org.apache.jorphan.util.ThreadDumper.writeThreadDump(ThreadDumper.java:77)
+	at org.apache.jorphan.util.ThreadDumper.threadDump(ThreadDumper.java:65)
+	at org.apache.jorphan.util.ThreadDumper.threadDump(ThreadDumper.java:49)
+	at org.apache.jmeter.gui.action.What.doAction(What.java:90)
+	at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:87)
+	...
+
+"TimerQueue" daemon prio=5 Id=24 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@23d7a6fe
+	at java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@23d7a6fe
+	at java.base@11.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.13/java.util.concurrent.DelayQueue.take(DelayQueue.java:229)
+	at java.desktop@11.0.13/javax.swing.TimerQueue.run(TimerQueue.java:171)
+	at java.base@11.0.13/java.lang.Thread.run(Thread.java:834)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@4dbc4a34
+
+"DestroyJavaVM" prio=5 Id=25 RUNNABLE
+
+"NanoOffset" daemon prio=6 Id=28 TIMED_WAITING
+	at java.base@11.0.13/java.lang.Thread.sleep(Native Method)
+	at java.base@11.0.13/java.lang.Thread.sleep(Thread.java:339)
+	at java.base@11.0.13/java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446)
+	at org.apache.jmeter.samplers.SampleResult$NanoOffset.getOffset(SampleResult.java:1510)
+	at org.apache.jmeter.samplers.SampleResult$NanoOffset.run(SampleResult.java:1504)
+
+"Swing-Shell" daemon prio=10 Id=33 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b592aff
+	at java.base@11.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@b592aff
+	at java.base@11.0.13/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+	at java.base@11.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+	at java.base@11.0.13/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+	at java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.desktop@11.0.13/sun.awt.shell.Win32ShellFolderManager2$ComInvoker$1.run(Win32ShellFolderManager2.java:586)
+	...
+

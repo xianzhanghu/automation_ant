@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ant-jmeter-test" default="run" basedir=".">
+<property environment="env"/>
+<tstamp>
+		<format property="time" pattern="yyyyMMdd" />
+	</tstamp>
+	<!-- 需要调用的jmeter目录，根据需要进行修改，本次使用的Linux路劲-->
+    <property name="jmeter.home" value="${env.WORKSPACE}/automation_ant/apache-jmeter-5.3"/>
+    <property name="report.title" value="接口自动化测试"/>
+    <!-- jmeter生成jtl格式的结果报告的路径 -->
+    <property name="jmeter.result.jtl.dri" value="jtl"/>
+    <!-- jmeter生成html格式的结果报告的路劲 -->
+    <property name="jmeter.result.html.dir" value="html"/>
+	 <property name="jmeter.result.html.dir1" value="html1"/>     
+    <!-- 生成报告的前缀-->
+	<property name="ReportName" value="接口自动化汇总报告_" />
+	<property name="ReportName1" value="接口自动化详细报告_" />
+	<property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dri}/${ReportName}${env.BUILD_ID}.jtl" />
+	<property name="jmeter.result.htmlName" value="${jmeter.result.html.dri}/${ReportName}${env.BUILD_ID}.html" />
+	<property name="jmeter.result.htmlName1" value="${jmeter.result.html.dri1}/${ReportName}${env.BUILD_ID}.html" />
+	<target name="run">
+		<!--antcall target="delete" /-->
+		  <antcall target="test" />
+		  <antcall target="report" />
+	</target>
+	 <!-- 该命令用来删除今天已经执行过的jtl，防止旧数据重叠>
+	<target name = "delete">
+		<delete file="${jmeter.result.jtl.dir}/${ReportName}${env.BUILD_ID}.jtl"/>
+	</target>
+	-->
+		<!-- 该命令为执行命令-->
+	<target name="test">
+		<taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTack" />
+		<jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
+			<!-- 声明要运行的脚本路劲"*.jmx"指包含此目录下的所有jmeter脚本-->
+			<testplans dir="${env.WORKSPACE}/antomation_ant" includes="*.jmx" />
+			<property name="jmeter.save.saveservice.output_format" value="xml" />
+		</jmeter>
+	</target>
+
+    <path id="xslt.classpath">
+        <fileset dir="${jmeter.home}/lib" includes="xalan*.jar"/>
+        <fileset dir="${jmeter.home}/lib" includes="serializer*.jar"/>
+    </path>
+   <!-- 该命令为生成汇总和详细报告-->
+	<target name="report">
+        <tstamp><format property="report.datestamp" pattern="yyyy/MM/dd HH:mm"/></tstamp>
+        <xslt
+            classpathref="xslt.classpath"
+            force="true"
+            in="${jmeter.result.jtlName}"
+            out="${jmeter.result.htmlName}"
+            style="${jmeter.home}/extras/jmeter-results-report_21.xsl">
+            <param name="dateReport" expression="${report.datestamp}"/>
+        </xslt>
+			    <xslt
+            classpathref="xslt.classpath"
+            force="true"
+            in="${jmeter.result.jtlName}"
+            out="${jmeter.result.htmlName1}"
+            style="${jmeter.home}/extras/jmeter.results.shanhe.me.xsl">
+            <param name="dateReport" expression="${report.datestamp}"/>
+        </xslt>
+		
+				<!-- 因为上面生成报告的时候，不会将相关的图片也一起拷贝至目标目录，所以，需要手动拷贝 -->
+		 <copy todir="${jmeter.result.html.dir}">
+			<fileset dir="${jmeter.home}/extras">
+				<include name="collapse.png" />
+				<include name="expand.png" />
+			</fileset>
+		 </copy>
+				<copy todir="${jmeter.result.html.dir1}">
+			<fileset dir="${jmeter.home}/extras">
+				<include name="collapse.png" />
+				<include name="expand.png" />
+			</fileset>
+		 </copy>
+	</target>
+</project>
+			
+				
+				
+				
+				    

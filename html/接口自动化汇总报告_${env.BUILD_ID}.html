@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=GB2312">
+<title>测试报告模版</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+			</style>
+<script type="text/javascript">
+            
+				var onclick_a = function(label) {
+					var getHtmlDocName = function() {
+						var str = window.location.href;
+						str = str.substring(str.lastIndexOf("/") + 1);
+						str = str.substring(0, str.lastIndexOf("."));
+						return str;
+					};
+					var url = "./interface_test_detail_report_" + getHtmlDocName().split('_')[getHtmlDocName().split('_').length-1] + ".html?label=" + label;
+					var a = document.getElementById(label);
+					if(a) a.setAttribute("href", url);
+				}
+
+            </script>
+</head>
+<body>
+<h1>测试报告模版</h1>
+<table width="100%">
+<tr>
+<td align="left">报告日期: 2022/09/02 16:58</td><td align="right"></td>
+</tr>
+</table>
+<hr size="1">
+<h2>汇总结果</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>接口请求数</th><th>失败数</th><th>成功比率</th><th>平均响应时间</th><th>最小时间</th><th>最大时间 </th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">49</td><td align="center">2</td><td align="right">95.92%</td><td align="right">762 ms</td><td align="right">1 ms</td><td align="right">12110 ms</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>详细页面</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>接口案例名称</th><th>接口请求数</th><th>失败数</th><th>成功比率</th><th>平均响应时间</th><th>最小时间</th><th>最大时间 </th>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('生产环境_获取生产环境全局变量');" href="javascript:void(0)" id="生产环境_获取生产环境全局变量">生产环境_获取生产环境全局变量</a></td><td align="center">6</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6 ms</td><td align="right">4 ms</td><td align="right">8 ms</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a onclick="return onclick_a('生产环境_发送请求给百度,获取title');" href="javascript:void(0)" id="生产环境_发送请求给百度,获取title">生产环境_发送请求给百度,获取title</a></td><td align="center">6</td><td align="center">1</td><td align="right">83.33%</td><td align="right">2924 ms</td><td align="right">913 ms</td><td align="right">12110 ms</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a onclick="return onclick_a('事务控制器');" href="javascript:void(0)" id="事务控制器">事务控制器</a></td><td align="center">11</td><td align="center">1</td><td align="right">90.91%</td><td align="right">1679 ms</td><td align="right">70 ms</td><td align="right">12110 ms</td>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('生产环境获取cookie');" href="javascript:void(0)" id="生产环境获取cookie">生产环境获取cookie</a></td><td align="center">5</td><td align="center">0</td><td align="right">100.00%</td><td align="right">65 ms</td><td align="right">28 ms</td><td align="right">77 ms</td>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('生产环境获取json格式响应结果');" href="javascript:void(0)" id="生产环境获取json格式响应结果">生产环境获取json格式响应结果</a></td><td align="center">5</td><td align="center">0</td><td align="right">100.00%</td><td align="right">57 ms</td><td align="right">19 ms</td><td align="right">71 ms</td>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('生产环境输入搜索文字');" href="javascript:void(0)" id="生产环境输入搜索文字">生产环境输入搜索文字</a></td><td align="center">5</td><td align="center">0</td><td align="right">100.00%</td><td align="right">63 ms</td><td align="right">23 ms</td><td align="right">79 ms</td>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('生产环境输入搜索文字1');" href="javascript:void(0)" id="生产环境输入搜索文字1">生产环境输入搜索文字1</a></td><td align="center">5</td><td align="center">0</td><td align="right">100.00%</td><td align="right">64 ms</td><td align="right">26 ms</td><td align="right">75 ms</td>
+</tr>
+<tr valign="top" class="">
+<td><a onclick="return onclick_a('Debug Sampler');" href="javascript:void(0)" id="Debug Sampler">Debug Sampler</a></td><td align="center">6</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3 ms</td><td align="right">1 ms</td><td align="right">4 ms</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>生产环境_发送请求给百度,获取title</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.UnknownHostException - Non HTTP response message: www.baidu.com</td><td></td>
+</tr>
+</table>
+<h3>事务控制器</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td> - Number of samples in transaction : 1, number of failing samples : 1</td><td></td>
+</tr>
+</table>
+</body>
+</html>

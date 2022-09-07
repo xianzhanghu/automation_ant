@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="4" it="0" lt="0" ct="0" ts="1662109572767" s="true" lb="生产环境_获取生产环境全局变量" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="" by="0" sby="0" sc="1" ec="0" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">vars.put(&quot;domain&quot;,&quot;www.baidu.com&quot;);    //要运行环境的域名或ip
+vars.put(&quot;title_check&quot;,&quot;百度一下，你就知道&quot;); //项目标题
+vars.put(&quot;protocol&quot;,&quot;https&quot;); //协议
+//vars.put(&quot;port&quot;,&quot;8080&quot;); //端口</samplerData>
+</sample>
+<httpSample t="12063" it="0" lt="0" ct="12062" ts="1662109572821" s="false" lb="生产环境_发送请求给百度,获取title" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: www.baidu.com" tn="控制台 1-1" dt="text" de="" by="2160" sby="0" sc="1" ec="1" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+</requestHeader>
+  <responseData class="java.lang.String">java.net.UnknownHostException: www.baidu.com&#xd;
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)&#xd;
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)&#xd;
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)&#xd;
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)&#xd;
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)&#xd;
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)&#xd;
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)&#xd;
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)&#xd;
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.hc.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:318)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)&#xd;
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)&#xd;
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)&#xd;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:697)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:455)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1189)&#xd;
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1178)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:490)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:416)&#xd;
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:250)&#xd;
+	at java.lang.Thread.run(Thread.java:748)&#xd;
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://www.baidu.com/</java.net.URL>
+</httpSample>
+<sample t="12063" it="60" lt="0" ct="12062" ts="1662109572775" s="false" lb="事务控制器" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="控制台 1-1" dt="" de="" by="2160" sby="0" sc="1" ec="1" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+</sample>
+<sample t="1" it="0" lt="0" ct="0" ts="1662109584917" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="控制台 1-1" dt="text" de="GBK" by="370" sby="0" sc="1" ec="0" ng="1" na="1" hn="WIN-2OI07QGJ8SU">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+JMeterThread.last_sample_ok=false
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@4b401b8a
+START.HMS=170611
+START.MS=1662109571525
+START.YMD=20220902
+TESTSTART.MS=1662109572271
+__jm__初始化数据__idx=0
+__jm__控制台__idx=0
+domain=www.baidu.com
+environment=生产环境
+path=../data/
+protocol=https
+search=13787521050
+title_check=百度一下，你就知道
+
+</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="653" lt="208" ts="1649660747056" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9981">
+  <assertionResult>
+    <name>Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <httpSample t="209" lt="208" ts="1649660747056" s="true" lb="HTTP Request-0" rc="301" rm="Moved Permanently" tn="Thread Group 1-1" dt="" by="322"/>
+  <httpSample t="443" lt="437" ts="1649660747266" s="true" lb="HTTP Request-1" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="9659"/>
+</httpSample>
+
+</testResults>
