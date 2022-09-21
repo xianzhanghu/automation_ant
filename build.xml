@@ -4,10 +4,9 @@
 <tstamp>
         <format property="time" pattern="yyyy_MM_dd HH_mm_ss" />
     </tstamp>
-    <!-- 需要调用的jmeter目录，根据需要进行修改，本次使用的windows路径-->  
-    <!-- 当前目录模式 property name="jmeter.home" value="C:\ant调用jmeter\interface_test\apache-jmeter-5.3" -->  
-    <property name="jmeter.home" value="apache-jmeter-5.3" />
-    <property name="report.title" value="build"/>
+    <!-- 需要调用的jmeter目录，根据需要进行修改，本次使用的windows路径-->   
+    <property name="jmeter.home" value="${env.WORKSPACE}/automation_ant/apache-jmeter-5.3" />
+    <property name="report.title" value="接口自动化测试"/>
     <!-- jmeter生成jtl格式的结果报告的路径--> 
     <property name="jmeter.result.jtl.dir" value="jtl" />
     <!-- jmeter生成html格式的结果报告的路径-->
@@ -26,7 +25,7 @@
     </target>
      <!-- 该命令用来删除今天已经执行过的jtl，防止旧数据重叠
 	<target name ="delete">
-		<delete file="${jmeter.result.jtl.dir}/${ReportName}${env.BUILD_ID}.jtl"/>
+		<delete file="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl"/>
 	</target>
 	-->  
 	     <!-- 该命令为执行命令-->  
@@ -34,8 +33,7 @@
         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
             <!-- 声明要运行的脚本路径"*.jmx"指包含此目录下的所有jmeter脚本-->
-			<!-- 当前目录模式 testplans dir="C:\automation_ant\script" includes="*.jmx"-->
-            <testplans dir="script" includes="*.jmx" />
+            <testplans dir="${env.WORKSPACE}/automation_ant" includes="*.jmx" />
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
         </jmeter>
     </target>
@@ -66,6 +64,12 @@
 
                 <!-- 因为上面生成报告的时候，不会将相关的图片也一起拷贝至目标目录，所以，需要手动拷贝 --> 
         <copy todir="${jmeter.result.html.dir}">
+            <fileset dir="${jmeter.home}/extras">
+                <include name="collapse.png" />
+                <include name="expand.png" />
+            </fileset>
+		</copy>
+		        <copy todir="${jmeter.result.html.dir1}">
             <fileset dir="${jmeter.home}/extras">
                 <include name="collapse.png" />
                 <include name="expand.png" />
